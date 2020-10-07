@@ -1,0 +1,1 @@
+# E31202314_StrukturKondisi
