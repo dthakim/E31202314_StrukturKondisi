@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package BobotNilaiHuruf;
+
+import java.util.Scanner;
+/**
+ *
+ * @author DANI TAUFIKUL HAKIM
+ */
+public class BobotNilaiHuruf {
+    public static void main(String[]  args){
+        int na = 0;
+        
+        //Buat Scanner
+        Scanner inp = new Scanner(System.in);
+        
+        //Ambil Nilai Huruf
+        System.out.print("Masukkan Nilai Huruf  : ");
+        String nh = inp.next();
+        
+        //Print
+        if (nh.equals("A")){
+            na=4;
+        } else if (nh.equals("B")){
+            na=3;
+        } else if (nh.equals("C")){
+            na=2;
+        } else if (nh.equals("D")){
+            na=1;
+        } else if (nh.equals("E")){
+            na=0;
+        } 
+        System.out.println("Nilai Angka  : "+na);
+        }
+}
