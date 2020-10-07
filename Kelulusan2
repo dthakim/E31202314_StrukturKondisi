@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Kelulusan2;
+
+import java.util.Scanner;
+/**
+ *
+ * @author DANI TAUFIKUL HAKIM
+ */
+public class Kelulusan2 {
+     public static void main (String [] args) {
+        int Tinggi_Badan;
+        String Nama, Jenis_Kelamin;
+        
+        //Buat Scanner
+        Scanner inp = new Scanner(System.in);
+        
+        //Ambil Nama
+        System.out.println("Nama : ");
+        Nama = inp.next();
+        
+        //Ambil Jenis Kelamin
+        System.out.println("Jenis Kelamin : ");
+        Jenis_Kelamin = inp.next();
+        
+        //Ambil Tinggi Badan
+        System.out.println("Tinggi Badan : ");
+        Tinggi_Badan = inp.nextInt();
+        
+        //Print
+        if ("Laki-laki".equals(Jenis_Kelamin)){
+            } if (Tinggi_Badan<=170){
+                System.out.println("Anda Gagal");
+            } else if (Tinggi_Badan>=171&&Tinggi_Badan<=230){
+                System.out.println("Selamat Anda Lulus");
+                
+         } else if ("Perempuan".equals(Jenis_Kelamin)){
+             } else if (Tinggi_Badan<=160){
+                 System.out.println("Anda Gagal");
+             } else if (Tinggi_Badan>=161&&Tinggi_Badan<=210){
+                 System.out.println("Selamat Anda Lulus");
+                
+             } else {
+                 System.out.println("Error");            }
+        }
+}
